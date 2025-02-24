@@ -1,2 +1,2 @@
 # react-spa
-A web single page application using React.
+A single page web application using React.

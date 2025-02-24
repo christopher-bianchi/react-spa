@@ -1,0 +1,11 @@
+services:
+  web:
+    image: ${IMAGE_NAME:-web}:${IMAGE_TAG:-latest}
+    container_name: web
+    build:
+      context: app/
+      dockerfile: app/docker/Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/usr/src/app

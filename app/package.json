@@ -1,0 +1,63 @@
+{
+  "name": "react-spa",
+  "version": "0.1.0",
+  "description": "A single page web application using React.",
+  "private": true,
+  "license": "ISC",
+  "dependencies": {
+    "@material-ui/core": "^4.11.3",
+    "@material-ui/icons": "^4.11.2",
+    "firebase": "^8.3.1",
+    "formik": "^2.2.6",
+    "latest": "^0.2.0",
+    "lodash.capitalize": "^4.2.1",
+    "lodash.clone": "^4.5.0",
+    "lodash.clonedeep": "^4.5.0",
+    "lodash.merge": "^4.6.2",
+    "lodash.size": "^4.2.0",
+    "react": "^16.14.0",
+    "react-beautiful-dnd": "^13.1.0",
+    "react-dom": "^16.14.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "^3.4.4",
+    "yup": "^0.29.3"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.1.0",
+    "firebase-tools": "^9.6.1",
+    "prettier": "^2.2.1",
+    "prop-types": "^15.7.2"
+  },
+  "scripts": {
+    "start": "PORT=8000 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build-check": "npm run lint && npm run format-check",
+    "lint": "eslint --ext .js,.jsx .",
+    "format": "prettier --write .",
+    "format-check": "prettier --check ."
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "eslint:recommended",
+      "prettier"
+    ],
+    "rules": {
+      "no-prototype-builtins": "off"
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
