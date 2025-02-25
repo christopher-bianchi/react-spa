@@ -1,0 +1,12 @@
+services:
+  web:
+    image: react-spa:${IMAGE_TAG:-latest}
+    container_name: web
+    build:
+      context: app/
+      dockerfile: docker/Dockerfile
+      target: dev
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./app:/usr/src/app
