@@ -1,5 +1,5 @@
 # -
-FROM node:12.8 AS base
+FROM node:12.8 AS dev
 
 LABEL maintainer="Christopher Bianchi"
 
@@ -13,7 +13,7 @@ CMD ["npm", "start"]
 
 
 # -
-FROM base AS builder
+FROM dev AS builder
 
 COPY . /usr/src/app/
 RUN npm run build-check && \
